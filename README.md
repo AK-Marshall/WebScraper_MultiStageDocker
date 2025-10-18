@@ -18,7 +18,7 @@ Ensure that all dependencies are installed and npm is initialized using `npm ini
 
 **Note:** Always ensure that all the required files are in a single folder to avoid errors during Docker build or runtime.
 
-#### Program Workflow Explained
+**Program Workflow Explained**
 
 - Import the modules **puppeteer** and **fs**.
 - Variable **scraped_url** is to get the user-specified URL from build phase; also environment variable is default set to `https://example.com` to avoid errors.
@@ -26,8 +26,6 @@ Ensure that all dependencies are installed and npm is initialized using `npm ini
 - A new browser tab opens and navigates to user-specified URL using `page.goto()`. The `waituntil` option ensures that the script waits until the page has loaded before extracting data.
 - The `page.evaluate()` function is used to extract the required details — currently, it extracts **Title**, **First**, and **Second heading** from the URL. It can be modified according to the requirements.
 - `fs.writeFileSync()` method is used to write the data into the **scraped_data.json** file, and `JSON.stringify()` converts the data input to JSON format.
-
----
 
 **server.py**
 
