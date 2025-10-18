@@ -10,7 +10,7 @@ Project Objectives
 
 ## Working
 
-### scraper.js
+**scraper.js**
 
 This JS file uses Node.Js with Puppeteer Library to perform the scrape from user-specified URL.
 
@@ -29,7 +29,7 @@ Ensure that all dependencies are installed and npm is initialized using `npm ini
 
 ---
 
-### server.py
+**server.py**
 
 This Python file uses **Flask Library** to create a web server that reads **scraped_data.json** file and serves the JSON response when accessed through  
 http://localhost:5000/
