@@ -10,13 +10,15 @@ Project Objectives
 
 ## Working
 
+### scraper.js
+
 This JS file uses Node.Js with Puppeteer Library to perform the scrape from user-specified URL.
 
 Ensure that all dependencies are installed and npm is initialized using `npm init` in the terminal.
 
 **Note:** Always ensure that all the required files are in a single folder to avoid errors during Docker build or runtime.
 
-### Program Workflow Explained
+#### Program Workflow Explained
 
 - Import the modules **puppeteer** and **fs**.
 - Variable **scraped_url** is to get the user-specified URL from build phase; also environment variable is default set to `https://example.com` to avoid errors.
@@ -27,7 +29,7 @@ Ensure that all dependencies are installed and npm is initialized using `npm ini
 
 ---
 
-## server.py
+### server.py
 
 This Python file uses **Flask Library** to create a web server that reads **scraped_data.json** file and serves the JSON response when accessed through  
 http://localhost:5000/
